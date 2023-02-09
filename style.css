@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(195, 193, 193);
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  background: #121212;
+  max-width: 650px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: "Inter";
+  color: white;
+}
+
+header {
+  background-image: url("/assets/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-el {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-title {
+  font-size: 2.3rem;
+  padding: 4rem 0;
+  letter-spacing: -0.045em;
+}
+
+.header-btn {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.form-search {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background: #2e2e2f;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+}
+form input {
+  flex: 1;
+  color: #a5a5a5;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+  background: #2e2e2f;
+  font-size: 1rem;
+}
+
+form button {
+  background: #4b4b4b;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  outline: none;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+form .fa-solid {
+  align-self: center;
+  padding: 10px 15px;
+  color: darkgray;
+}
+
+main {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.displayNone {
+  display: none;
+}
+
+.main-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10%;
+  margin-top: 40%;
+}
+main p {
+  color: #2e2e2f;
+}
+
+.content {
+  margin: 50px 0;
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid #e5e7eb;
+}
+.content-img img {
+  height: 148px;
+  width: 100px;
+}
+
+.data {
+  margin-left: 21px;
+}
+
+.data-first {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.data-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.icon-star {
+  color: #fec654 !important;
+}
+.data-second {
+  display: flex;
+}
+
+.data-time,
+.data-gen,
+.data-score,
+.data-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.data-second {
+  gap: 18px;
+  padding: 8px 0;
+}
+
+.data-second button {
+  color: #fff;
+  background: #121212;
+  border: none;
+  cursor: pointer;
+  font-weight: 200;
+}
+.fa-solid {
+  color: #fff;
+  margin-right: 4px;
+}
+
+.data-desc {
+  text-align: left;
+  color: #a5a5a5;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* WHATCHLIST CSS */
+
+.watchlist-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.watchlist-empty button {
+  color: #fff;
+  background-color: #121212;
+  border: none;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+}
